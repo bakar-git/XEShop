@@ -1,0 +1,5 @@
+in header(search bar), how to handle categories
+implementations
+{
+    copy categories element inside header 
+}

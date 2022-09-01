@@ -1,0 +1,237 @@
+/* ///////// */
+/* top bar */
+/* ///////// */
+
+.tb-item:hover{
+    background-color: var(--bs-white);
+    outline: var(--ae-light-1) solid 1px;
+}
+
+
+/* ///////// */
+/* first section */
+/* ///////// */
+
+#categories-panel{
+    width: 240px;
+}
+#categories-panel .category:hover{
+    box-shadow: 0px 0px 5px 0px #00000000;
+    transition: box-shadow 200ms;
+}
+#categories-panel .category:hover{
+    box-shadow: -2px 2px 5px 0px #00000033;
+}
+#categories-panel .category a{
+    display: block;
+    text-decoration: none;
+    color: var(--bs-dark);
+}
+
+#categories-panel .category > a i{
+    /* black-50 */
+    color : rgba(0,0,0,.5); 
+}
+#categories-panel .category > a:hover i,
+#categories-panel .category > a:hover,
+#categories-panel .category dd a:hover{
+    color: var(--ae-danger);
+}
+
+#categories-panel .brand-img{
+    max-height: 40px;
+    max-width: 800px;
+}
+
+#categories-panel .trending-sub-categories > a > img{
+    width: 60px;
+    height: 60px;
+    margin-top: -20px;
+}
+
+#banner-trending-items .carousel-indicators > button{
+    padding: 0.2rem 0.2rem!important;
+    border: none!important;
+    opacity: 1!important;
+    border-radius: 50px!important;
+    width: auto!important;
+    height: auto!important;
+}
+#banner-trending-items .carousel-indicators > button.active{
+    background-color: var(--ae-danger);
+    padding: 0.2rem 0.4rem!important;
+}
+
+#banner-trending-items .carousel-control-prev,
+#banner-trending-items .carousel-control-next{
+    background: #00000033;
+}
+
+/* ///////// */
+/* Sections */
+/* ///////// */
+.text-skin{
+    color : #f4d096;    
+}
+
+
+#featured-categories > div:first-child{
+    background-image: url('../image/sample-featured-categories1.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#more-to-love > a{
+    width: 190px;
+    text-decoration: none;
+}
+
+#footer-navigation dl a{
+    display: block;
+    text-decoration: none;
+    color: var(--bs-dark);
+}
+
+#footer-navigation dd a{
+    font-size: 0.9rem;
+    color: var(--bs-gray);
+}
+
+#footer-navigation dd a:hover{
+    color: var(--ae-danger);
+}
+
+#footer-privacy-policy a{
+    color: var(--bs-gray);
+    text-decoration: none;
+}
+
+#side-bar{
+    width: 40px;
+    z-index: 1030;
+}
+
+
+/* ///////// */
+/* Utilities */
+/* ///////// */
+
+.text-overflow-ellipsis{
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.shadow-effect{
+    box-shadow: 0px 0px 9px 1px #00000000;
+}
+.shadow-effect:hover{
+    box-shadow: 0px 0px 8px 0px #00000033;
+}
+
+img.ae-img-affect,
+a.ae-img-affect img{
+    filter: contrast(90%);
+}
+img.ae-img-affect:hover,
+a.ae-img-affect:hover img{
+    filter: contrast(95%);
+}
+
+img.ae-img-affect.dark,
+a.ae-img-affect.dark img{
+    filter: contrast(95%);
+}
+img.ae-img-affect.dark:hover,
+a.ae-img-affect.dark:hover img{
+    filter: contrast(85%);
+}
+
+:root{
+    --ae-light : #fafafa;
+    --ae-light-1 : #f2f2f2;
+    --ae-danger : #ff4747;
+}
+
+.transition-text{
+    transition: color 200ms;
+}
+
+.to-bg-ae-danger:hover,
+.btn-ae-danger,
+.bg-ae-danger{
+    background-color: var(--ae-danger)!important;
+}
+.border-ae-danger{
+    border-color: var(--ae-danger)!important;
+}
+.text-ae-danger,
+.to-text-ae-danger:hover{
+    color: var(--ae-danger)!important;
+}
+
+.btn-ae-light,
+.bg-ae-light{
+    background-color: var(--ae-light)!important;
+}
+
+.btn-ae-light-1,
+.bg-ae-light-1{
+    background-color: var(--ae-light-1)!important;
+}
+.border-ae-light-1{
+    border-color: var(--ae-light-1)!important;
+}
+.text-ae-light-1{
+    color: var(--ae-light-1)!important;
+}
+
+.l-bg-warning {
+    background: linear-gradient(to right, #a86008, #ffba56) !important;
+}
+
+.h7,
+.fs-7 {
+    font-size: 0.9rem !important;
+}
+
+.h8,
+.fs-8 {
+    font-size: 0.8rem !important;
+}
+
+.h9,
+.fs-9 {
+    font-size: 0.7rem !important;
+}
+
+.w-70 {
+    width: 70% !important;
+}
+
+
+.w-30 {
+    width: 30% !important;
+}
+
+
+
+.cursor-pointer{
+    cursor: pointer;
+}
+
+
+.c-dropdown{
+    z-index: 1000;
+    position: relative;
+}
+
+.c-dropdown-menu{
+    position: absolute;
+    visibility: hidden;
+}
+.c-dropdown:hover .c-dropdown-menu,
+.c-dropdown:focus-within .c-dropdown-menu,
+.c-dropdown:focus .c-dropdown-menu,
+.c-dropdown .c-dropdown-menu:hover{
+    visibility: visible;
+}
