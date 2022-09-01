@@ -7,6 +7,10 @@
     outline: var(--ae-light-1) solid 1px;
 }
 
+/* ///////// */
+/* Index Page */
+/* ///////// */
+
 
 /* ///////// */
 /* first section */
@@ -110,6 +114,30 @@
     width: 40px;
     z-index: 1030;
 }
+
+
+/* ///////// */
+/* Login Page */
+/* ///////// */
+
+#login .nav-item>a {
+    color: var(--bs-dark);
+    border-radius: 0 !important;
+    background-color: transparent;
+}
+#login .nav-item>a + hr{
+    opacity: 0;
+}
+
+#login .nav-item>a.active {
+    font-weight: bold;
+    background-color: transparent;
+}
+
+#login .nav-item>a.active + hr{
+    opacity: 1;
+}
+
 
 
 /* ///////// */
