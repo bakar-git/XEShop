@@ -1,0 +1,36 @@
+#banner-trending-items .carousel-indicators > button{
+    padding: 0.2rem 0.2rem!important;
+    border: none!important;
+    opacity: 1!important;
+    border-radius: 50px!important;
+    width: auto!important;
+    height: auto!important;
+}
+#banner-trending-items .carousel-indicators > button.active{
+    background-color: var(--ae-danger);
+    padding: 0.2rem 0.4rem!important;
+}
+
+#banner-trending-items .carousel-control-prev,
+#banner-trending-items .carousel-control-next{
+    background: #00000033;
+}
+
+/* Sections */
+
+
+#featured-categories > div:first-child{
+    background-image: url('../image/sample-featured-categories1.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#more-to-love > a{
+    width: 190px;
+    text-decoration: none;
+}
+
+#side-bar{
+    width: 40px;
+    z-index: 1030;
+}

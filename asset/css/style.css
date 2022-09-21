@@ -5,90 +5,54 @@
 .tb-item:hover{
     background-color: var(--bs-white);
     outline: var(--ae-light-1) solid 1px;
+    z-index: 1030;
 }
 
-/* ///////// */
-/* Index Page */
-/* ///////// */
-
 
 /* ///////// */
-/* first section */
+/* header */
 /* ///////// */
 
-#categories-panel{
+.categories-panel{
     width: 240px;
 }
-#categories-panel .category:hover{
+.categories-panel .category:hover{
     box-shadow: 0px 0px 5px 0px #00000000;
     transition: box-shadow 200ms;
 }
-#categories-panel .category:hover{
+.categories-panel .category:hover{
     box-shadow: -2px 2px 5px 0px #00000033;
 }
-#categories-panel .category a{
+.categories-panel .category a{
     display: block;
     text-decoration: none;
     color: var(--bs-dark);
 }
 
-#categories-panel .category > a i{
+.categories-panel .category > a i{
     /* black-50 */
     color : rgba(0,0,0,.5); 
 }
-#categories-panel .category > a:hover i,
-#categories-panel .category > a:hover,
-#categories-panel .category dd a:hover{
+.categories-panel .category > a:hover i,
+.categories-panel .category > a:hover,
+.categories-panel .category dd a:hover{
     color: var(--ae-danger);
 }
 
-#categories-panel .brand-img{
+.categories-panel .brand-img{
     max-height: 40px;
     max-width: 800px;
 }
 
-#categories-panel .trending-sub-categories > a > img{
+.categories-panel .trending-sub-categories > a > img{
     width: 60px;
     height: 60px;
     margin-top: -20px;
 }
 
-#banner-trending-items .carousel-indicators > button{
-    padding: 0.2rem 0.2rem!important;
-    border: none!important;
-    opacity: 1!important;
-    border-radius: 50px!important;
-    width: auto!important;
-    height: auto!important;
-}
-#banner-trending-items .carousel-indicators > button.active{
-    background-color: var(--ae-danger);
-    padding: 0.2rem 0.4rem!important;
-}
-
-#banner-trending-items .carousel-control-prev,
-#banner-trending-items .carousel-control-next{
-    background: #00000033;
-}
-
 /* ///////// */
-/* Sections */
+/* footer */
 /* ///////// */
-.text-skin{
-    color : #f4d096;    
-}
-
-
-#featured-categories > div:first-child{
-    background-image: url('../image/sample-featured-categories1.webp');
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-#more-to-love > a{
-    width: 190px;
-    text-decoration: none;
-}
 
 #footer-navigation dl a{
     display: block;
@@ -108,34 +72,6 @@
 #footer-privacy-policy a{
     color: var(--bs-gray);
     text-decoration: none;
-}
-
-#side-bar{
-    width: 40px;
-    z-index: 1030;
-}
-
-
-/* ///////// */
-/* Login Page */
-/* ///////// */
-
-#login .nav-item>a {
-    color: var(--bs-dark);
-    border-radius: 0 !important;
-    background-color: transparent;
-}
-#login .nav-item>a + hr{
-    opacity: 0;
-}
-
-#login .nav-item>a.active {
-    font-weight: bold;
-    background-color: transparent;
-}
-
-#login .nav-item>a.active + hr{
-    opacity: 1;
 }
 
 
@@ -178,6 +114,7 @@ a.ae-img-affect.dark:hover img{
     --ae-light : #fafafa;
     --ae-light-1 : #f2f2f2;
     --ae-danger : #ff4747;
+    --ae-skin : #f4d096;
 }
 
 .transition-text{
@@ -195,6 +132,10 @@ a.ae-img-affect.dark:hover img{
 .text-ae-danger,
 .to-text-ae-danger:hover{
     color: var(--ae-danger)!important;
+}
+
+.text-ae-skin{
+    color : var(--ae-skin);    
 }
 
 .btn-ae-light,
@@ -257,9 +198,9 @@ a.ae-img-affect.dark:hover img{
     position: absolute;
     visibility: hidden;
 }
-.c-dropdown:hover .c-dropdown-menu,
-.c-dropdown:focus-within .c-dropdown-menu,
-.c-dropdown:focus .c-dropdown-menu,
-.c-dropdown .c-dropdown-menu:hover{
+.c-dropdown:hover > .c-dropdown-menu,
+.c-dropdown:focus-within > .c-dropdown-menu,
+.c-dropdown:focus > .c-dropdown-menu,
+.c-dropdown > .c-dropdown-menu:hover{
     visibility: visible;
 }
